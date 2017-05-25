@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">	
     <title>Exploring with Jekyll</title>
+    <link href="{{baseurl}}/css/main.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <h1>Exploring with Jekyll</h1>
-      <nav>
-        <ul>
-          <li><a href="{{baseurl}}/index.html"></li>
-          <li><a href="{{baseurl}}/nav1.html"</li>
-        </ul>
-      </nav>
+      {% include nav.html%}
 
 
     </header>
 
 
     {{content}}
+    
+    <footer>
+	  {% include nav.html%}
+      @2015 Exploring with Jekyll
+    </footer>
   </body>
 </html>
